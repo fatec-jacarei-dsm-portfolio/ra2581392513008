@@ -1,0 +1,330 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body{
+  overflow-x: hidden;
+}
+
+
+.content{
+  display:grid;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.content-imagens{
+  display: grid;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 10px;
+  gap: 10px;
+}
+
+.content-ul{
+  display: grid;
+  flex-wrap:wrap;
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  gap: 10px;
+}
+
+#content-contatos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+#content-contatos-imagens{
+  display: grid;
+  flex-wrap: wrap;
+  max-width: 70px;
+  max-height: 236px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#content-contatos-p{
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#imagem-perfil{
+  border-radius: 50%;
+}
+
+#imagem-whatsapp{
+  max-width: 100%;
+  max-height: auto;
+}
+
+#imagem-email{
+  max-width: 100%;
+  max-height: auto;
+}
+
+
+#imagem-linkedin{
+  max-width: 100%;
+  max-height: auto;
+}
+
+#imagem-consultavid{
+  max-width: 100%;
+  height: auto;
+}
+
+#imagem-betterCallUs{
+  max-width: 100%;
+  height: auto;
+}
+
+.imagem-sga{
+  max-width: 100%;
+  height: auto;
+}
+
+.imagem-mdc{
+  max-width: 100%;
+  height: auto;
+}
+
+.a-projetos{
+  color: rgba(8, 235, 243, 0.767);
+  cursor: pointer;
+  text-decoration: none;
+  transition: filter 300ms;
+}
+
+#a-header{
+  color: rgba(8, 235, 243, 0.767);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: large;
+  transition: filter 300ms;
+}
+
+#a-header:hover{
+  filter: drop-shadow(0 0 2px #01c4fffb);
+}
+#a-header.react:hover{
+  filter: drop-shadow(0 0 2px #01c4fffb);
+}
+
+#a-contatos{
+  cursor: pointer;
+  text-decoration: none;
+  color:rgba(255, 255, 255, 0.87);
+}
+
+.navbar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  gap: 15px;
+}
+
+.titulo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.setas{
+  max-width: 80px;
+  max-height: 80px;
+  gap: 100px;
+}
+
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.p-sobre{
+  max-width: 700px;
+  margin: 0;
+}
+
+.p-projetos{
+  max-width: 1000px;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  word-wrap: break-word;
+}
+
+#p-header{
+  margin: 0;
+  font-size: large;
+}
+
+#p-contatos-whatsapp{
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size:large;
+}
+
+#p-contatos-email{
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size:large;
+}
+
+#p-contatos-linkedin{
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size:large;
+}
+
+@media(max-width: 320px){
+  #p-contatos-whatsapp,
+  #p-contatos-email,
+  #p-contatos-linkedin{
+    padding-top:15px;
+    padding-bottom: 15px;
+    font-size: small;
+  }
+}
+
+.legenda{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px
+}
+
+.contatos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ul{
+  max-width: 1000px;
+  margin: 0;
+}
+
+li{
+  max-width: 1000px;
+  margin: 0;
+}
+
+.ul-sobre{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+@media(max-width: 425px){
+  .p-projetos{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: medium;
+  }
+  #imagem-consultavid{
+    width: 350px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .legenda{
+    max-width: 400px;
+  }
+  .p-legenda{
+    max-width: 400px;
+    margin: 0;
+    font-size: small; 
+  }
+  .content-ul{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media(max-width: 375px){
+  .p-projetos{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: medium;
+  }
+  #imagem-consultavid{
+    width: 320px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .legenda{
+    max-width: 400px;
+  }
+  .p-legenda{
+    max-width: 300px;
+    margin: 0;
+    font-size: small; 
+  }
+  .content-ul{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media(max-width: 375px){
+  .p-projetos{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: small;
+  }
+  #imagem-consultavid{
+    width: 320px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .legenda{
+    max-width: 400px;
+  }
+  .p-legenda{
+    max-width: 300px;
+    margin: 0;
+    font-size: small; 
+  }
+  .content-ul{
+    font-size:small;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
